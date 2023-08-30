@@ -2,12 +2,11 @@
 
 
 {% block container %}
-    <h2>UPDATE PAGE</h2>
-
+    <h2>DELETE PAGE</h2>
     <form action="" method="POST">
-        {{ form.as_p }}
+        {% comment %} {{ form.as_p }} {% endcomment %}
         {% csrf_token %}
-        <input type="submit" value="UPDATE">
+        <input type="submit" value="DELETE">
     </form>
     
 {% endblock container %}
